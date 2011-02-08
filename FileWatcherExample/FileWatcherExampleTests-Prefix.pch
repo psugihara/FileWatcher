@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FileWatcherExampleTests' target in the 'FileWatcherExampleTests' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

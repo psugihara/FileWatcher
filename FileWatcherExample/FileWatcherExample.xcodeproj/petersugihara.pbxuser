@@ -1,0 +1,131 @@
+// !$*UTF8*$!
+{
+	A10C68F213019CC400B13716 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A1644A871301A7C2006C481C /* FileWatcherExample */;
+		activeTarget = A10C68FE13019CC400B13716 /* FileWatcherExample */;
+		addToTargets = (
+			A10C68FE13019CC400B13716 /* FileWatcherExample */,
+		);
+		codeSenseManager = A1644A971301A7C9006C481C /* Code sense */;
+		executables = (
+			A1644A871301A7C2006C481C /* FileWatcherExample */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 318875586;
+			PBXWorkspaceStateSaveDate = 318875586;
+		};
+		perUserProjectItems = {
+			A1644A8F1301A7C9006C481C /* PBXTextBookmark */ = A1644A8F1301A7C9006C481C /* PBXTextBookmark */;
+			A1644A901301A7C9006C481C /* PBXTextBookmark */ = A1644A901301A7C9006C481C /* PBXTextBookmark */;
+		};
+		sourceControlManager = A1644A961301A7C9006C481C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A10C68FE13019CC400B13716 /* FileWatcherExample */ = {
+		activeExec = 0;
+		executables = (
+			A1644A871301A7C2006C481C /* FileWatcherExample */,
+		);
+	};
+	A10C691913019CC500B13716 /* FileWatcherExampleTests */ = {
+		activeExec = 0;
+	};
+	A10C693413019D6700B13716 /* FileWatcher.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = FileWatcher.m;
+		path = "/Users/petersugihara/Documents/Code/Flags/Client/Flags (OS X)/FileWatcher.m";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 1651}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 380}";
+		};
+	};
+	A1644A871301A7C2006C481C /* FileWatcherExample */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = FileWatcherExample;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A1644A8F1301A7C9006C481C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A10C693413019D6700B13716 /* FileWatcher.m */;
+		name = "FileWatcher.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 380;
+		vrLoc = 0;
+	};
+	A1644A901301A7C9006C481C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A10C693413019D6700B13716 /* FileWatcher.m */;
+		name = "FileWatcher.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 380;
+		vrLoc = 0;
+	};
+	A1644A961301A7C9006C481C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A1644A971301A7C9006C481C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

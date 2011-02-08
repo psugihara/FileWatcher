@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10C690313019CC400B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
+		A10C690813019CC400B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C690613019CC400B13716 /* InfoPlist.strings */; };
+		A10C690A13019CC400B13716 /* FileWatcherExample-main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C690913019CC400B13716 /* FileWatcherExample-main.m */; };
+		A10C690D13019CC500B13716 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10C690B13019CC500B13716 /* MainMenu.xib */; };
+		A10C691013019CC500B13716 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A10C690E13019CC500B13716 /* Credits.rtf */; };
+		A10C691313019CC500B13716 /* FileWatcherExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */; };
+		A10C691B13019CC500B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
+		A10C691F13019CC500B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C691E13019CC500B13716 /* InfoPlist.strings */; };
+		A1644A9B1301A7F0006C481C /* FileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A1644A9A1301A7F0006C481C /* FileWatcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10C690213019CC400B13716 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A10C690413019CC400B13716 /* FileWatcherExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileWatcherExample-Info.plist"; sourceTree = "<group>"; };
+		A10C690513019CC400B13716 /* FileWatcherExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileWatcherExample-Prefix.pch"; sourceTree = "<group>"; };
+		A10C690713019CC400B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A10C690913019CC400B13716 /* FileWatcherExample-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FileWatcherExample-main.m"; sourceTree = "<group>"; };
+		A10C690C13019CC500B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A10C690F13019CC500B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A10C691113019CC500B13716 /* FileWatcherExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileWatcherExampleAppDelegate.h; sourceTree = "<group>"; };
+		A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileWatcherExampleAppDelegate.m; sourceTree = "<group>"; };
+		A10C691C13019CC500B13716 /* FileWatcherExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileWatcherExampleTests-Info.plist"; sourceTree = "<group>"; };
+		A10C691D13019CC500B13716 /* FileWatcherExampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileWatcherExampleTests-Prefix.pch"; sourceTree = "<group>"; };
+		A10C691E13019CC500B13716 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/FileWatcherExampleTests/InfoPlist.strings; sourceTree = "<group>"; };
+		A10C693B1301A64800B13716 /* FileWatcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileWatcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10C693D1301A64800B13716 /* FileWatcherExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileWatcherExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1644A991301A7F0006C481C /* FileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWatcher.h; sourceTree = "<group>"; };
+		A1644A9A1301A7F0006C481C /* FileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWatcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10C68FC13019CC400B13716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10C690313019CC400B13716 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10C691613019CC500B13716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10C691B13019CC500B13716 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10C68F013019CC400B13716 = {
+			isa = PBXGroup;
+			children = (
+				A10C68F713019CC400B13716 /* Classes */,
+				A10C68F813019CC400B13716 /* Other Sources */,
+				A10C68F913019CC400B13716 /* Resources */,
+				A10C68FA13019CC400B13716 /* Frameworks */,
+				A10C690013019CC400B13716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10C68F713019CC400B13716 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A1644A991301A7F0006C481C /* FileWatcher.h */,
+				A1644A9A1301A7F0006C481C /* FileWatcher.m */,
+				A10C691113019CC500B13716 /* FileWatcherExampleAppDelegate.h */,
+				A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A10C68F813019CC400B13716 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A10C690513019CC400B13716 /* FileWatcherExample-Prefix.pch */,
+				A10C690913019CC400B13716 /* FileWatcherExample-main.m */,
+				A10C691D13019CC500B13716 /* FileWatcherExampleTests-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		A10C68F913019CC400B13716 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10C690413019CC400B13716 /* FileWatcherExample-Info.plist */,
+				A10C690613019CC400B13716 /* InfoPlist.strings */,
+				A10C690B13019CC500B13716 /* MainMenu.xib */,
+				A10C690E13019CC500B13716 /* Credits.rtf */,
+				A10C691C13019CC500B13716 /* FileWatcherExampleTests-Info.plist */,
+				A10C691E13019CC500B13716 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A10C68FA13019CC400B13716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A10C690213019CC400B13716 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A10C690013019CC400B13716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10C693B1301A64800B13716 /* FileWatcherExample.app */,
+				A10C693D1301A64800B13716 /* FileWatcherExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10C68FE13019CC400B13716 /* FileWatcherExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10C692813019CC500B13716 /* Build configuration list for PBXNativeTarget "FileWatcherExample" */;
+			buildPhases = (
+				A10C68FB13019CC400B13716 /* Sources */,
+				A10C68FC13019CC400B13716 /* Frameworks */,
+				A10C68FD13019CC400B13716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileWatcherExample;
+			productName = FileWatcherExample;
+			productReference = A10C693B1301A64800B13716 /* FileWatcherExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A10C691913019CC500B13716 /* FileWatcherExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10C692B13019CC500B13716 /* Build configuration list for PBXNativeTarget "FileWatcherExampleTests" */;
+			buildPhases = (
+				A10C691513019CC500B13716 /* Sources */,
+				A10C691613019CC500B13716 /* Frameworks */,
+				A10C691713019CC500B13716 /* Resources */,
+				A10C691813019CC500B13716 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileWatcherExampleTests;
+			productName = FileWatcherExampleTests;
+			productReference = A10C693D1301A64800B13716 /* FileWatcherExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10C68F213019CC400B13716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Bard College";
+			};
+			buildConfigurationList = A10C68F513019CC400B13716 /* Build configuration list for PBXProject "FileWatcherExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A10C68F013019CC400B13716;
+			productRefGroup = A10C690013019CC400B13716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10C68FE13019CC400B13716 /* FileWatcherExample */,
+				A10C691913019CC500B13716 /* FileWatcherExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10C68FD13019CC400B13716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10C690813019CC400B13716 /* InfoPlist.strings in Resources */,
+				A10C690D13019CC500B13716 /* MainMenu.xib in Resources */,
+				A10C691013019CC500B13716 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10C691713019CC500B13716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10C691F13019CC500B13716 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A10C691813019CC500B13716 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10C68FB13019CC400B13716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10C690A13019CC400B13716 /* FileWatcherExample-main.m in Sources */,
+				A10C691313019CC500B13716 /* FileWatcherExampleAppDelegate.m in Sources */,
+				A1644A9B1301A7F0006C481C /* FileWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10C691513019CC500B13716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A10C690613019CC400B13716 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10C690713019CC400B13716 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A10C690B13019CC500B13716 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10C690C13019CC500B13716 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A10C690E13019CC500B13716 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A10C690F13019CC500B13716 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A10C692413019CC500B13716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A10C692513019CC500B13716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A10C692613019CC500B13716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A10C692713019CC500B13716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		A10C692913019CC500B13716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileWatcherExample-Prefix.pch";
+				INFOPLIST_FILE = "FileWatcherExample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A10C692A13019CC500B13716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileWatcherExample-Prefix.pch";
+				INFOPLIST_FILE = "FileWatcherExample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A10C692C13019CC500B13716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileWatcherExampleTests-Prefix.pch";
+				INFOPLIST_FILE = "FileWatcherExampleTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A10C692D13019CC500B13716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileWatcherExampleTests-Prefix.pch";
+				INFOPLIST_FILE = "FileWatcherExampleTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A10C692E13019CC500B13716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = FileWatcherExampleTests;
+			};
+			name = Debug;
+		};
+		A10C692F13019CC500B13716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = FileWatcherExampleTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10C68F513019CC400B13716 /* Build configuration list for PBXProject "FileWatcherExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10C692413019CC500B13716 /* Debug */,
+				A10C692513019CC500B13716 /* Release */,
+				A10C692613019CC500B13716 /* Debug */,
+				A10C692713019CC500B13716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10C692813019CC500B13716 /* Build configuration list for PBXNativeTarget "FileWatcherExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10C692913019CC500B13716 /* Debug */,
+				A10C692A13019CC500B13716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10C692B13019CC500B13716 /* Build configuration list for PBXNativeTarget "FileWatcherExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10C692C13019CC500B13716 /* Debug */,
+				A10C692D13019CC500B13716 /* Release */,
+				A10C692E13019CC500B13716 /* Debug */,
+				A10C692F13019CC500B13716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10C68F213019CC400B13716 /* Project object */;
+}

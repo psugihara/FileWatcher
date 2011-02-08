@@ -1,0 +1,12 @@
+FileWatcher is a simple class to watch for changes on files in OSX. FileWatcher will see changes and keep track of file locations even if the user moves the files in the finder. All the magic happened in FileWatcher.m.
+
+To run the test app see the example in the applicationDidFinishLaunching method of ./FileWatcherExample/Classes/FileWatcherExampleAppDelegate.m
+
+
+This is free under the MIT license, so do whatever with it (Dropbox clones anyone?).
+
+-Peter Sugihara
+
+References:
+- http://developer.apple.com/library/mac/#featuredarticles/FileSystemEvents/index.html
+- http://www.cocoabuilder.com/archive/cocoa/284420-how-do-get-file-reference-o-relying-on-the-path.html
