@@ -1,7 +1,7 @@
-FileWatcher is a simple class to watch for changes on files in OSX. FileWatcher will see changes and keep track of file locations even if the user moves the files in the finder. All the magic happened in FileWatcher.m.
+FileWatcher is a simple class to watch for changes on files in OSX. FileWatcher will see changes and keep track of file locations even if the user moves the files in the finder. All the magic happens in FileWatcher.m.
 
-To run the test app see the example in the applicationDidFinishLaunching method of ./FileWatcherExample/Classes/FileWatcherExampleAppDelegate.m
-
+To run the test app see the example in the applicationDidFinishLaunching method of ./FileWatcherExample/Classes/FileWatcherExampleAppDelegate.m.
+Once a path is given to the watcher, watch the console as you make changes to the file.
 
 This is free under the MIT license, so do whatever with it (Dropbox clones anyone?).
 
