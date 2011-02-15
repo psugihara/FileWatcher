@@ -10,12 +10,12 @@
 		A10C690313019CC400B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
 		A10C690813019CC400B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C690613019CC400B13716 /* InfoPlist.strings */; };
 		A10C690A13019CC400B13716 /* FileWatcherExample-main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C690913019CC400B13716 /* FileWatcherExample-main.m */; };
-		A10C690D13019CC500B13716 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10C690B13019CC500B13716 /* MainMenu.xib */; };
 		A10C691013019CC500B13716 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A10C690E13019CC500B13716 /* Credits.rtf */; };
 		A10C691313019CC500B13716 /* FileWatcherExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */; };
 		A10C691B13019CC500B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
 		A10C691F13019CC500B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C691E13019CC500B13716 /* InfoPlist.strings */; };
 		A1644A9B1301A7F0006C481C /* FileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A1644A9A1301A7F0006C481C /* FileWatcher.m */; };
+		A1F363A913030C7000CE56BB /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F363A813030C7000CE56BB /* Application.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,6 @@
 		A10C690513019CC400B13716 /* FileWatcherExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileWatcherExample-Prefix.pch"; sourceTree = "<group>"; };
 		A10C690713019CC400B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A10C690913019CC400B13716 /* FileWatcherExample-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FileWatcherExample-main.m"; sourceTree = "<group>"; };
-		A10C690C13019CC500B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A10C690F13019CC500B13716 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		A10C691113019CC500B13716 /* FileWatcherExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileWatcherExampleAppDelegate.h; sourceTree = "<group>"; };
 		A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileWatcherExampleAppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		A10C693D1301A64800B13716 /* FileWatcherExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileWatcherExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1644A991301A7F0006C481C /* FileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWatcher.h; sourceTree = "<group>"; };
 		A1644A9A1301A7F0006C481C /* FileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWatcher.m; sourceTree = "<group>"; };
+		A1F363A813030C7000CE56BB /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +94,10 @@
 			children = (
 				A10C690413019CC400B13716 /* FileWatcherExample-Info.plist */,
 				A10C690613019CC400B13716 /* InfoPlist.strings */,
-				A10C690B13019CC500B13716 /* MainMenu.xib */,
 				A10C690E13019CC500B13716 /* Credits.rtf */,
 				A10C691C13019CC500B13716 /* FileWatcherExampleTests-Info.plist */,
 				A10C691E13019CC500B13716 /* InfoPlist.strings */,
+				A1F363A813030C7000CE56BB /* Application.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10C690813019CC400B13716 /* InfoPlist.strings in Resources */,
-				A10C690D13019CC500B13716 /* MainMenu.xib in Resources */,
 				A10C691013019CC500B13716 /* Credits.rtf in Resources */,
+				A1F363A913030C7000CE56BB /* Application.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,14 +247,6 @@
 				A10C690713019CC400B13716 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A10C690B13019CC500B13716 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A10C690C13019CC500B13716 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		A10C690E13019CC500B13716 /* Credits.rtf */ = {

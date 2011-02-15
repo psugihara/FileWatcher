@@ -40,10 +40,7 @@
 }
 
 - (void)stopWatchingFileAtURL:(NSURL *)url {
-    for (NSURL *watchedURL in [fileModificationDates allKeys]) {
-        if ([watchedURL isEqual:url])
-            [fileModificationDates removeObjectForKey:url];
-    }
+    [fileModificationDates removeObjectForKey:url];
 }
 
 - (NSDate *)modificationDateForURL:(NSURL *)URL {
