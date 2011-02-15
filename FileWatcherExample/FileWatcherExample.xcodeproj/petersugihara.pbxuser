@@ -19,7 +19,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -34,12 +34,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 318875586;
-			PBXWorkspaceStateSaveDate = 318875586;
+			PBXPerProjectTemplateStateSaveDate = 319438742;
+			PBXWorkspaceStateSaveDate = 319438742;
 		};
 		perUserProjectItems = {
-			A1644A8F1301A7C9006C481C /* PBXTextBookmark */ = A1644A8F1301A7C9006C481C /* PBXTextBookmark */;
-			A1644A901301A7C9006C481C /* PBXTextBookmark */ = A1644A901301A7C9006C481C /* PBXTextBookmark */;
+			A13A7CA8130A3F9F00481627 /* PBXTextBookmark */ = A13A7CA8130A3F9F00481627 /* PBXTextBookmark */;
+			A13A7CA9130A3F9F00481627 /* PlistBookmark */ = A13A7CA9130A3F9F00481627 /* PlistBookmark */;
+			A13A7CAA130A3F9F00481627 /* PlistBookmark */ = A13A7CAA130A3F9F00481627 /* PlistBookmark */;
+			A1644A8F1301A7C9006C481C = A1644A8F1301A7C9006C481C /* PBXTextBookmark */;
+			A1644A901301A7C9006C481C = A1644A901301A7C9006C481C /* PBXTextBookmark */;
 		};
 		sourceControlManager = A1644A961301A7C9006C481C /* Source Control */;
 		userBuildSettings = {
@@ -54,6 +57,14 @@
 	A10C691913019CC500B13716 /* FileWatcherExampleTests */ = {
 		activeExec = 0;
 	};
+	A10C691E13019CC500B13716 /* InfoPlist.strings */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 214}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
 	A10C693413019D6700B13716 /* FileWatcher.m */ = {
 		isa = PBXFileReference;
 		fileEncoding = 4;
@@ -66,6 +77,38 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 380}";
 		};
+	};
+	A13A7CA8130A3F9F00481627 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A10C693413019D6700B13716 /* FileWatcher.m */;
+		name = "FileWatcher.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 380;
+		vrLoc = 0;
+	};
+	A13A7CA9130A3F9F00481627 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = A10C691C13019CC500B13716 /* FileWatcherExampleTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/petersugihara/Documents/Code/FileWatcher/FileWatcherExample/FileWatcherExampleTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	A13A7CAA130A3F9F00481627 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = A10C691C13019CC500B13716 /* FileWatcherExampleTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/petersugihara/Documents/Code/FileWatcher/FileWatcherExample/FileWatcherExampleTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	A1644A871301A7C2006C481C /* FileWatcherExample */ = {
 		isa = PBXExecutable;
@@ -83,6 +126,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -90,6 +134,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = FileWatcherExample;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
