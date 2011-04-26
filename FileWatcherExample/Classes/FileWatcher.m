@@ -50,7 +50,7 @@
 }
 
 - (void)startWatching {
-    int latency = 3;
+    float latency = .5;
 	NSTimer *timer = [NSTimer timerWithTimeInterval:latency
                                              target:self 
                                            selector:@selector(checkForUpdates) 
@@ -71,11 +71,16 @@
             [fileModificationDates setObject:modDate forKey:bookmark]; // update modDate
             [delegate fileDidChangeAtURL:watchedURL]; // callback
         }
+        
+        [fileModificationDates removeObjectForKey:bookmark];
+        // Rewatch the file at the current URL in case the file is overwritten.
+        if (watchedURL)
+            [self watchFileAtURL:watchedURL]; 
     }
 }
 
 - (NSData *)bookmarkFromURL:(NSURL *)url {
-    NSData *bookmark = [url bookmarkDataWithOptions:NSURLBookmarkCreationMinimalBookmark
+    NSData *bookmark = [url bookmarkDataWithOptions:NSURLBookmarkCreationPreferFileIDResolution
                      includingResourceValuesForKeys:NULL
                                       relativeToURL:NULL
                                               error:NULL];
@@ -83,11 +88,14 @@
 }
 
 - (NSURL *)urlFromBookmark:(NSData *)bookmark {
+    NSError *error = noErr;
     NSURL *url = [NSURL URLByResolvingBookmarkData:bookmark
                                            options:NSURLBookmarkResolutionWithoutUI
                                      relativeToURL:NULL
-                               bookmarkDataIsStale:NO
-                                             error:NULL];
+                               bookmarkDataIsStale:NULL
+                                             error:&error];
+    if (error != noErr)
+        NSLog(@"%@", [error description]);
     return url;
 }
 
