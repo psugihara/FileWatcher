@@ -10,24 +10,20 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FileWatcherDelegate;
-@interface FileWatcher : NSObject <NSCoding> {
-@private
-    NSMutableDictionary *fileModificationDates; // Keys are bookmarks being watched.
-    id <FileWatcherDelegate> delegate;
-    NSRunLoop *runLoop;
-    NSFileManager *fm;
-}
+extern NSString *const FileWatcherFileDidChangeNotification;
 
-- (void)watchFileAtURL:(NSURL *)path; 
+@protocol FileWatcherDelegate;
+@interface FileWatcher : NSObject <NSCoding>
+
++ (id)sharedWatcher;
+- (void)watchFileAtURL:(NSURL *)path;
 - (void)stopWatchingFileAtURL:(NSURL *)path;
 
-@property (nonatomic, assign) id <FileWatcherDelegate> delegate;
-@property (nonatomic, retain) NSMutableDictionary *fileModificationDates;
+@property (weak, nonatomic) id <FileWatcherDelegate> delegate;
 
 @end
 
 
 @protocol FileWatcherDelegate <NSObject>
-- (void)fileDidChangeAtURL:(NSURL *)notification;
+- (void)fileDidChangeAtURL:(NSURL *)url;
 @end
