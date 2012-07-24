@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6488754215BD3F9400E81AC1 /* FileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6488754115BD3F9400E81AC1 /* FileWatcher.m */; };
+		6488754315BD3F9400E81AC1 /* FileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6488754115BD3F9400E81AC1 /* FileWatcher.m */; };
 		A10C690313019CC400B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
 		A10C690813019CC400B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C690613019CC400B13716 /* InfoPlist.strings */; };
 		A10C690A13019CC400B13716 /* FileWatcherExample-main.m in Sources */ = {isa = PBXBuildFile; fileRef = A10C690913019CC400B13716 /* FileWatcherExample-main.m */; };
@@ -15,10 +17,11 @@
 		A10C691B13019CC500B13716 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10C690213019CC400B13716 /* Cocoa.framework */; };
 		A10C691F13019CC500B13716 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10C691E13019CC500B13716 /* InfoPlist.strings */; };
 		A13A7CC1130A41F700481627 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13A7CC0130A41F700481627 /* Application.xib */; };
-		A1644A9B1301A7F0006C481C /* FileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A1644A9A1301A7F0006C481C /* FileWatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6488754015BD3F9400E81AC1 /* FileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileWatcher.h; path = ../../FileWatcher.h; sourceTree = "<group>"; };
+		6488754115BD3F9400E81AC1 /* FileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileWatcher.m; path = ../../FileWatcher.m; sourceTree = "<group>"; };
 		A10C690213019CC400B13716 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A10C690413019CC400B13716 /* FileWatcherExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileWatcherExample-Info.plist"; sourceTree = "<group>"; };
 		A10C690513019CC400B13716 /* FileWatcherExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileWatcherExample-Prefix.pch"; sourceTree = "<group>"; };
@@ -33,8 +36,6 @@
 		A10C693B1301A64800B13716 /* FileWatcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileWatcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10C693D1301A64800B13716 /* FileWatcherExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileWatcherExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13A7CC0130A41F700481627 /* Application.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
-		A1644A991301A7F0006C481C /* FileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWatcher.h; sourceTree = "<group>"; };
-		A1644A9A1301A7F0006C481C /* FileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +72,8 @@
 		A10C68F713019CC400B13716 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A1644A991301A7F0006C481C /* FileWatcher.h */,
-				A1644A9A1301A7F0006C481C /* FileWatcher.m */,
+				6488754015BD3F9400E81AC1 /* FileWatcher.h */,
+				6488754115BD3F9400E81AC1 /* FileWatcher.m */,
 				A10C691113019CC500B13716 /* FileWatcherExampleAppDelegate.h */,
 				A10C691213019CC500B13716 /* FileWatcherExampleAppDelegate.m */,
 			);
@@ -227,7 +228,7 @@
 			files = (
 				A10C690A13019CC400B13716 /* FileWatcherExample-main.m in Sources */,
 				A10C691313019CC500B13716 /* FileWatcherExampleAppDelegate.m in Sources */,
-				A1644A9B1301A7F0006C481C /* FileWatcher.m in Sources */,
+				6488754215BD3F9400E81AC1 /* FileWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6488754315BD3F9400E81AC1 /* FileWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
