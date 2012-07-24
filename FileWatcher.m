@@ -76,27 +76,29 @@ NSString *const FileWatcherFileDidChangeNotification = @"FileWatcherFileDidChang
 }
 
 - (void)checkForUpdates {
-    [self.fileModificationDates enumerateKeysAndObjectsUsingBlock:^(NSData *bookmark, NSDate *bookmarkDate, BOOL *stop) {
-        NSURL *watchedURL = [self urlFromBookmark:bookmark];
-        NSDate *modDate = [self modificationDateForURL:watchedURL];
-        // Fires YES the first time it's called after the program turns on.
-        // Not sure why, don't really care right now. [Sorry !];
-        if ([modDate compare:bookmarkDate] == NSOrderedDescending) {
-            [self.fileModificationDates setObject:modDate forKey:bookmark]; // update modDate
-            if([self.delegate respondsToSelector:@selector(fileDidChangeAtURL:)]){
-                [self.delegate fileDidChangeAtURL:watchedURL]; // callback
+    for(NSData *bookmark in [self.fileModificationDates allKeys]) {
+        @autoreleasepool {
+            NSURL *watchedURL = [self urlFromBookmark:bookmark];
+            NSDate *modDate = [self modificationDateForURL:watchedURL];
+            // Fires YES the first time it's called after the program turns on.
+            // Not sure why, don't really care right now. [Sorry !];
+            if ([modDate compare:[self.fileModificationDates objectForKey:bookmark]] == NSOrderedDescending) {
+                [self.fileModificationDates setObject:modDate forKey:bookmark]; // update modDate
+                if([self.delegate respondsToSelector:@selector(fileDidChangeAtURL:)]){
+                    [self.delegate fileDidChangeAtURL:watchedURL]; // callback
+                }
+                [[NSNotificationCenter defaultCenter]
+                 postNotificationName:FileWatcherFileDidChangeNotification
+                 object:self userInfo:[NSDictionary dictionaryWithObject:watchedURL forKey:@"URL"]];
             }
-            [[NSNotificationCenter defaultCenter]
-             postNotificationName:FileWatcherFileDidChangeNotification
-             object:self userInfo:[NSDictionary dictionaryWithObject:watchedURL forKey:@"URL"]];
+            
+            [self.fileModificationDates removeObjectForKey:bookmark];
+            // Rewatch the file at the current URL in case the file is overwritten.
+            if (watchedURL) {
+                [self watchFileAtURL:watchedURL];
+            }
         }
-        
-        [self.fileModificationDates removeObjectForKey:bookmark];
-        // Rewatch the file at the current URL in case the file is overwritten.
-        if (watchedURL) {
-            [self watchFileAtURL:watchedURL];
-        }
-    }];
+    }
 }
 
 - (NSData *)bookmarkFromURL:(NSURL *)url {
