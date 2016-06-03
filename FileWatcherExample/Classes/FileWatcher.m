@@ -10,13 +10,11 @@
 
 
 @interface WatchedFile : NSObject
-@property (retain) NSURL *watchedURL;
-@property (retain) NSDate *modDate;
+@property (strong) NSURL *watchedURL;
+@property (strong) NSDate *modDate;
 @end
 
 @implementation WatchedFile
-@synthesize watchedURL;
-@synthesize modDate;
 
 - (BOOL)isEqual:(id)object
 {
@@ -90,9 +88,6 @@
 }
 
 - (void)checkForUpdates {
-    
-    NSLog(@"checkForUpdates");
-    
     for (NSData *bookmark in [fileModificationDates allKeys]) {
         NSURL *watchedURL = [self urlFromBookmark:bookmark];
         NSDate *modDate = [self modificationDateForURL:watchedURL];
@@ -134,11 +129,6 @@
     if (error != noErr)
         NSLog(@"%@", [error description]);
     return url;
-}
-
-- (void)dealloc {
-    // Clean-up code here.
-    [super dealloc];
 }
 
 #pragma mark -
