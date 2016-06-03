@@ -15,7 +15,7 @@
     watcher.delegate = self;
     
     // A test watch:
-    // [watcher watchFileAtURL:[NSURL URLWithString:@"file://localhost/Users/someuser/Desktop/Untitled.rtf"]];
+    [watcher watchFileAtURL:[NSURL fileURLWithPath:@"/Users/amanda/Desktop/Untitled.txt"]];
 }
 
 - (void)fileDidChangeAtURL:(NSURL *)url {

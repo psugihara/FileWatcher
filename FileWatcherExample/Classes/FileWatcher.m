@@ -8,6 +8,32 @@
 
 #import "FileWatcher.h"
 
+
+@interface WatchedFile : NSObject
+@property (retain) NSURL *watchedURL;
+@property (retain) NSDate *modDate;
+@end
+
+@implementation WatchedFile
+@synthesize watchedURL;
+@synthesize modDate;
+
+- (BOOL)isEqual:(id)object
+{
+    BOOL toReturn = NO;
+    if([object isKindOfClass:[WatchedFile class]])
+    {
+        WatchedFile *other = (WatchedFile *)object;
+        if([other.modDate compare:self.modDate] == NSOrderedSame && [other.watchedURL isEqual:self.watchedURL])
+        {
+            toReturn = YES;
+        }
+    }
+    return toReturn;
+}
+@end
+
+
 @interface FileWatcher()
 - (void)startWatching;
 - (void)checkForUpdates;
@@ -35,8 +61,11 @@
 - (void)watchFileAtURL:(NSURL *)url {
     NSData *bookmark = [self bookmarkFromURL:url];
     NSDate *modDate = [self modificationDateForURL:url];
+    WatchedFile *wf = [[WatchedFile alloc] init];
+    wf.watchedURL = url;
+    wf.modDate = modDate;
     
-    [fileModificationDates setObject:modDate forKey:bookmark];
+    [fileModificationDates setObject:wf forKey:bookmark];
 }
 
 - (void)stopWatchingFileAtURL:(NSURL *)url {
@@ -61,14 +90,22 @@
 }
 
 - (void)checkForUpdates {
+    
+    NSLog(@"checkForUpdates");
+    
     for (NSData *bookmark in [fileModificationDates allKeys]) {
         NSURL *watchedURL = [self urlFromBookmark:bookmark];
         NSDate *modDate = [self modificationDateForURL:watchedURL];
+        WatchedFile *temp = [[WatchedFile alloc] init];
+        temp.watchedURL = watchedURL;
+        temp.modDate = modDate;
+        
+        WatchedFile *existing = fileModificationDates[bookmark];
+        
         // Fires YES the first time it's called after the program turns on.
         // Not sure why, don't really care right now. [Sorry !];
-        if ([modDate compare:[fileModificationDates objectForKey:bookmark
-                              ]] == NSOrderedDescending) {
-            [fileModificationDates setObject:modDate forKey:bookmark]; // update modDate
+        if (![existing isEqual:temp]) {
+            [fileModificationDates setObject:temp forKey:bookmark]; // update modDate
             [delegate fileDidChangeAtURL:watchedURL]; // callback
         }
         
