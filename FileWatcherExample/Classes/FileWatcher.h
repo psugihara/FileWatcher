@@ -14,7 +14,6 @@
 @interface FileWatcher : NSObject <NSCoding> {
 @private
     NSMutableDictionary *fileModificationDates; // Keys are bookmarks being watched.
-    id <FileWatcherDelegate> delegate;
     NSRunLoop *runLoop;
     NSFileManager *fm;
 }
@@ -22,8 +21,8 @@
 - (void)watchFileAtURL:(NSURL *)path; 
 - (void)stopWatchingFileAtURL:(NSURL *)path;
 
-@property (nonatomic, assign) id <FileWatcherDelegate> delegate;
-@property (nonatomic, retain) NSMutableDictionary *fileModificationDates;
+@property (nonatomic, weak) id <FileWatcherDelegate> delegate;
+@property (nonatomic, strong) NSMutableDictionary *fileModificationDates;
 
 @end
 
